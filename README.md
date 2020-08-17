@@ -1,24 +1,136 @@
-
+# Cloud-Security-Resources- NEW REPO
 ## Table of Contents
+- [Intro](#Short_List)
+-- [Disclaimer](#Disclaimer)
+-- [Thanks](#Thanks)
+-- [Frameworks](#Reference_Frameworks)
+-- [Contribute](#contribute)
+-- [Linked Repo](#other_Repos)
+- [ShortList](#Short_List)
+-- [Defensive](#defensive-hardening-security-assessment-and-inventory)
+- [Detailed List](#DETAILED_LIST)
+-- [Defensive](#defensive-hardening-security-assessment-and-inventory)
+-- [Offensive](#offensive)
+-- [Continuous Security Auditing](#continuous-security-auditing)
+-- [Digital Forensics and Incident Response](#digital-forensics-and-incident-response)
+-- [Development Security](#development-security)
+-- [S3 Buckets Auditing](#s3-buckets-auditing)
+-- [Training](#training)
+-- [Other interesting tools/code](#other-interesting-tools/code)
 
-- [Contribute](#contribute)
-- [Defensive](#defensive-hardening-security-assessment-and-inventory)
-- [Offensive](#offensive)
-- [Continuous Security Auditing](#continuous-security-auditing)
-- [Digital Forensics and Incident Response](#digital-forensics-and-incident-response)
-- [Development Security](#development-security)
-- [S3 Buckets Auditing](#s3-buckets-auditing)
-- [Training](#training)
-- [Other interesting tools/code](#other-interesting-tools/code)
+## Disclaimer:
+This is a group of tools references and resources put together for AWS, Azure and GCP.
+Feel free to reference it and use it.
+
+Please quote the author :) be kind
+
 
 ## Contribute
 Do you want to contribute to this list? Feel free to send a PR and make sure your tool is [Open Source](https://en.wikipedia.org/wiki/Open_source).
 
+## Thanks
+Thanks to this amazing list of contributors 
+Tony de la fuente where most of this list comes from 
+| Name | URL | Description | Granularity | Contribution |
+| ---------- | :---------- | :---------- | :----------: | :----------: |
+| Tony Delafuente | https://github.com/toniblyx/my-arsenal-of-aws-security-tools | Tony Main List of resources | High | High |
+| Francesco Cipollone | This | High| Med| 
 
+## Reference_Frameworks
+Also a list for documentation
+
+| Name | URL | Description | Mapping to other | Usability |
+| ---------- | :---------- | :---------- | :----------: | :----------: |
+| CIS | https://www.cisecurity.org/white-papers/cis-controls-cloud-companion-guide/,  https://d0.awsstatic.com/whitepapers/compliance/AWS_CIS_Foundations_Benchmark.pdf  | CIS Control Framework for Cloud | High | High |
+| Cloud Control Matrix | https://cloudsecurityalliance.org/research/working-groups/cloud-controls-matrix | CSA Maturity Matrix | Yes | High |
+| Sentinel Terraform Templates | https://www.terraform.io/docs/cloud/sentinel/index.html | Templates | N/A | N/A |
+
+## Other_Repos
 | Name | URL | Description | Popularity | Metadata |
 | ---------- | :---------- | :---------- | :----------: | :----------: |
 | **My Arsenal of AWS Security Tools** | [https://github.com/toniblyx/my-arsenal-of-aws-security-tools](https://github.com/toniblyx/my-arsenal-of-aws-security-tools) | This list of open source tools for AWS security: defensive, offensive, auditing, DFIR, etc.|[![stars](https://badgen.net/github/stars/toniblyx/my-arsenal-of-aws-security-tools)](https://badgen.net/github/stars/toniblyx/my-arsenal-of-aws-security-tools)| [![contributors](https://badgen.net/github/contributors/toniblyx/my-arsenal-of-aws-security-tools)](https://badgen.net/github/contributors/toniblyx/my-arsenal-of-aws-security-tools) [![watchers](https://badgen.net/github/watchers/toniblyx/my-arsenal-of-aws-security-tools)](https://badgen.net/github/watchers/toniblyx/my-arsenal-of-aws-security-tools) [![last-commit](https://badgen.net/github/last-commit/toniblyx/my-arsenal-of-aws-security-tools)](https://badgen.net/github/last-commit/toniblyx/my-arsenal-of-aws-security-tools)  [![open-issues](https://badgen.net/github/open-issues/toniblyx/my-arsenal-of-aws-security-tools)](https://badgen.net/github/open-issues/toniblyx/my-arsenal-of-aws-security-tools) [![closed-issues](https://badgen.net/github/closed-issues/toniblyx/my-arsenal-of-aws-security-tools)](https://badgen.net/github/closed-issues/toniblyx/my-arsenal-of-aws-security-tools) |
+| **Francesco Arsenal AWS** | [https://github.com/franksec42/my-arsenal-of-aws-security-tools](https://github.com/franksec42/my-arsenal-of-aws-security-tools) | This list of open source tools for AWS security: defensive, offensive, auditing, DFIR, etc.|[![stars](https://badgen.net/github/stars/franksec42/my-arsenal-of-aws-security-tools)](https://badgen.net/github/stars/franksec42/my-arsenal-of-aws-security-tools)| [![contributors](https://badgen.net/github/contributors/franksec42/my-arsenal-of-aws-security-tools)](https://badgen.net/github/contributors/franksec42/my-arsenal-of-aws-security-tools) [![watchers](https://badgen.net/github/watchers/franksec42/my-arsenal-of-aws-security-tools)](https://badgen.net/github/watchers/franksec42/my-arsenal-of-aws-security-tools) [![last-commit](https://badgen.net/github/last-commit/franksec42/my-arsenal-of-aws-security-tools)](https://badgen.net/github/last-commit/franksec42/my-arsenal-of-aws-security-tools)  [![open-issues](https://badgen.net/github/open-issues/franksec42/my-arsenal-of-aws-security-tools)](https://badgen.net/github/open-issues/franksec42/my-arsenal-of-aws-security-tools) [![closed-issues](https://badgen.net/github/closed-issues/franksec42/my-arsenal-of-aws-security-tools)](https://badgen.net/github/closed-issues/franksec42/my-arsenal-of-aws-security-tools) |
 
+## Short_List
+
+| Name | Resource Area | Link | Use | AREA | Description | 
+| ---------- | :---------- | :---------- | :---------- | :---------- | :----------: | 
+| CloudSplaining | RISK | https://github.com/salesforce/cloudsplaining.git | Assess | IAM | Cloudsplaining is an AWS IAM Security Assessment tool that identifies violations of least privilege and generates a risk-prioritized HTML report with a triage worksheet. https://cloudsplaining.readthedocs.io/ | 
+| Prowler | Tool-Audit | https://github.com/toniblyx/prowler | Assessment | AWS | prowler - Tool based on AWS-CLI commands for AWS account hardening, following guidelines of the CIS Amazon Web Services Foundations Benchmark |  
+| SCOUT2 | Tool-Audit | https://github.com/cloudsploit/scans | Audit | AWS | nccgroup/Scout2 - Security auditing tool for AWS environments  |  
+| CloudSploit scan | Tool-Audit | https://aws.amazon.com/inspector/ | Audit | AWS | AWS security scanning checks  |  
+| Netflix Security Monkey  | Tool-Audit | https://github.com/Netflix/security_monkey | Audit | AWS |  Netflix/security_monkey - Security Monkey monitors your AWS and GCP accounts for policy changes and alerts on insecure configuration  |  
+| Netflix Aardvark  | Tool-Audit | https://github.com/Netflix/security_monkey | API | AWS |  Netflix/Aardvark is a multi-account AWS IAM Access Advisor API  |  
+| Netflix RepoKid  | Tool-Audit | https://github.com/Netflix/repokid | Tool | RBAC |  AWS Least Privilege for Distributed, High-Velocity Deployment  |  
+| Zeus  | Tool-Audit | https://github.com/DenizParlak/Zeus | Hardening | All-AWS |  DenizParlak/Zeus - AWS Auditing & Hardening Tool http://www.denizparlak.com/?p=386   |  
+| Nimbostratus   | Tool-Audit | https://github.com/andresriancho/nimbostratus | Infra | All-AWS |  Fingerprinting and Exploiting Cloud infra imbostratus - Tools for fingerprinting and exploiting Amazon cloud infrastructures + video presentation and intro blog post Instruction Link: https://andresriancho.github.io/nimbostratus/ |  
+| Bucketdump  | Tool-Bucket | https://github.com/jordanpotti/AWSBucketDump | Buckets | All-AWS |  |  
+ 
+ 
+**S3 Buckets Auditing:**
+
+* [https://github.com/Parasimpaticki/sandcastle](https://github.com/Parasimpaticki/sandcastle) 
+* [https://github.com/smiegles/mass3](https://github.com/smiegles/mass3)
+* [https://github.com/koenrh/s3enum](https://github.com/koenrh/s3enum)
+* [https://github.com/tomdev/teh_s3_bucketeers/](https://github.com/tomdev/teh_s3_bucketeers/) 
+* [https://github.com/eth0izzle/bucket-stream](https://github.com/eth0izzle/bucket-stream) 
+* [https://github.com/gwen001/s3-buckets-finder](https://github.com/gwen001/s3-buckets-finder) 
+* [https://github.com/aaparmeggiani/s3find](https://github.com/aaparmeggiani/s3find)
+* [https://github.com/bbb31/slurp](https://github.com/bbb31/slurp) 
+* [https://github.com/random-robbie/slurp](https://github.com/random-robbie/slurp)
+* [https://github.com/kromtech/s3-inspector](https://github.com/kromtech/s3-inspector) 
+* [https://github.com/petermbenjamin/s3-fuzzer](https://github.com/petermbenjamin/s3-fuzzer) 
+* [https://github.com/jordanpotti/AWSBucketDump](https://github.com/jordanpotti/AWSBucketDump) 
+* [https://github.com/bear/s3scan](https://github.com/bear/s3scan) 
+* [https://github.com/sa7mon/S3Scanner](https://github.com/sa7mon/S3Scanner) 
+* [https://github.com/magisterquis/s3finder](https://github.com/magisterquis/s3finder) 
+* [https://github.com/abhn/S3Scan](https://github.com/abhn/S3Scan) 
+* [https://breachinsider.com/honey-buckets/](https://breachinsider.com/honey-buckets/) 
+* [https://www.buckhacker.com](https://www.buckhacker.com) | [https://www.thebuckhacker.com/](https://www.thebuckhacker.com/)    [Currently Offline]
+* [https://buckets.grayhatwarfare.com/](https://buckets.grayhatwarfare.com/)
+
+
+ 
+ 
+**Training:**
+
+* **Flaws** [http://flaws.cloud/](http://flaws.cloud/) 
+* **Flaws2** http://flaws2.cloud/
+* **Cloudgoat** https://github.com/RhinoSecurityLabs/cloudgoat 
+
+---
+
+
+**Others:**
+
+* **StreamAlert** https://github.com/airbnb/streamalert - data analytics
+* [https://github.com/nagwww/s3-leaks](https://github.com/nagwww/s3-leaks) - a list of some biggest leaks recorded 
+* **Rhino Labs Research** https://github.com/RhinoSecurityLabs/Cloud-Security-Research
+* **Dufflebag** https://github.com/bishopfox/dufflebag - Search exposed EBS volumes for secrets
+* **CloudENum** https://github.com/initstring/cloud_enum 
+
+**IAM:**
+
+* **AirIAM** https://github.com/bridgecrewio/AirIAM
+* **IAM Reference** https://github.com/rvedotrc/aws-iam-reference
+* **PMapper** https://github.com/nccgroup/PMapper 
+* **CloudSplaining** https://github.com/salesforce/cloudsplaining
+
+**Honeypots**
+
+* **Spacecrab** https://bitbucket.org/asecurityteam/spacecrab
+* https://breachinsider.com/honey-buckets/
+* **honeyLambda** https://github.com/0x4D31/honeyLambda
+* **Thinkst Canary** https://github.com/thinkst/canarytokens-docker
+
+**Serverless & Lambda:**
+
+* https://github.com/Skyscanner/LambdaGuard - LambdaGuard is an AWS Lambda auditing tool designed to create asset visibility and provide actionable results.
+
+**CloudFormation and Terraform**
+
+
+## DETAILED_LIST
 ## Defensive: Hardening, Security Assessment and Inventory
 | Name | URL | Description | Popularity | Metadata |
 | ---------- | :---------- | :---------- | :----------: | :----------: |
@@ -64,9 +176,19 @@ Do you want to contribute to this list? Feel free to send a PR and make sure you
 | **SkyWrapper** | [https://github.com/cyberark/SkyWrapper](https://github.com/cyberark/SkyWrapper) | SkyWrapper helps to discover suspicious creation forms and uses of temporary tokens in AWS | [![stars](https://badgen.net/github/stars/cyberark/SkyWrapper)](https://badgen.net/github/stars/cyberark/SkyWrapper) | [![contributors](https://badgen.net/github/contributors/cyberark/SkyWrapper)](https://badgen.net/github/contributors/cyberark/SkyWrapper) [![watchers](https://badgen.net/github/watchers/cyberark/SkyWrapper)](https://badgen.net/github/watchers/cyberark/SkyWrapper) [![last-commit](https://badgen.net/github/last-commit/cyberark/SkyWrapper)](https://badgen.net/github/last-commit/cyberark/SkyWrapper) [![open-issues](https://badgen.net/github/open-issues/cyberark/SkyWrapper)](https://badgen.net/github/open-issues/cyberark/SkyWrapper) [![closed-issues](https://badgen.net/github/closed-issues/cyberark/SkyWrapper)](https://badgen.net/github/closed-issues/cyberark/SkyWrapper) |
 | **aws-recon** | [https://github.com/darkbitio/aws-recon](https://github.com/darkbitio/aws-recon) | Multi-threaded AWS inventory collection tool | [![stars](https://badgen.net/github/stars/darkbitio/aws-recon)](https://badgen.net/github/stars/darkbitio/aws-recon) | [![contributors](https://badgen.net/github/contributors/darkbitio/aws-recon)](https://badgen.net/github/contributors/darkbitio/aws-recon) [![watchers](https://badgen.net/github/watchers/darkbitio/aws-recon)](https://badgen.net/github/watchers/darkbitio/aws-recon) [![last-commit](https://badgen.net/github/last-commit/darkbitio/aws-recon)](https://badgen.net/github/last-commit/darkbitio/aws-recon) [![open-issues](https://badgen.net/github/open-issues/darkbitio/aws-recon)](https://badgen.net/github/open-issues/darkbitio/aws-recon) [![closed-issues](https://badgen.net/github/closed-issues/darkbitio/aws-recon)](https://badgen.net/github/closed-issues/darkbitio/aws-recon) |
 
+
+
+## Cheat_Sheets
 ## Offensive
 | Name | URL | Description | Popularity | Metadata |
 | ---------- | :---------- | :---------- | :----------: | :----------: |
+| **Cloud Pentest Cheatsheets** | [https://github.com/iknowjason/AriaCloud](https://github.com/iknowjason/AriaCloud) | AWS Attack Library Containers (pentest Kit) contains  |[![stars](https://badgen.net/github/stars/iknowjason/AriaCloud)](https://badgen.net/github/stars/iknowjason/AriaCloud)| [![contributors](https://badgen.net/github/contributors/iknowjason/AriaCloud)](https://badgen.net/github/contributors/iknowjason/AriaCloud)[![watchers](https://badgen.net/github/watchers/iknowjason/AriaCloud)](https://badgen.net/github/watchers/iknowjason/AriaCloud)[![last-commit](https://badgen.net/github/last-commit/iknowjason/AriaCloud)](https://badgen.net/github/last-commit/iknowjason/AriaCloud) [![open-issues](https://badgen.net/github/open-issues/iknowjason/AriaCloud)](https://badgen.net/github/open-issues/iknowjason/AriaCloud) [![closed-issues](https://badgen.net/github/closed-issues/iknowjason/AriaCloud)](https://badgen.net/github/closed-issues/iknowjason/AriaCloud) |
+
+
+## Offensive
+| Name | URL | Description | Popularity | Metadata |
+| ---------- | :---------- | :---------- | :----------: | :----------: |
+| **Aria Cloud Container** | [https://github.com/iknowjason/AriaCloud](https://github.com/iknowjason/AriaCloud) | AWS Attack Library Containers (pentest Kit) contains  |[![stars](https://badgen.net/github/stars/iknowjason/AriaCloud)](https://badgen.net/github/stars/iknowjason/AriaCloud)| [![contributors](https://badgen.net/github/contributors/iknowjason/AriaCloud)](https://badgen.net/github/contributors/iknowjason/AriaCloud)[![watchers](https://badgen.net/github/watchers/iknowjason/AriaCloud)](https://badgen.net/github/watchers/iknowjason/AriaCloud)[![last-commit](https://badgen.net/github/last-commit/iknowjason/AriaCloud)](https://badgen.net/github/last-commit/iknowjason/AriaCloud) [![open-issues](https://badgen.net/github/open-issues/iknowjason/AriaCloud)](https://badgen.net/github/open-issues/iknowjason/AriaCloud) [![closed-issues](https://badgen.net/github/closed-issues/iknowjason/AriaCloud)](https://badgen.net/github/closed-issues/iknowjason/AriaCloud) |
 | **weirdALL** | [https://github.com/carnal0wnage/weirdAAL](https://github.com/carnal0wnage/weirdAAL) | AWS Attack Library |[![stars](https://badgen.net/github/stars/carnal0wnage/weirdAAL)](https://badgen.net/github/stars/carnal0wnage/weirdAAL)| [![contributors](https://badgen.net/github/contributors/carnal0wnage/weirdAAL)](https://badgen.net/github/contributors/carnal0wnage/weirdAAL)[![watchers](https://badgen.net/github/watchers/carnal0wnage/weirdAAL)](https://badgen.net/github/watchers/carnal0wnage/weirdAAL)[![last-commit](https://badgen.net/github/last-commit/carnal0wnage/weirdAAL)](https://badgen.net/github/last-commit/carnal0wnage/weirdAAL) [![open-issues](https://badgen.net/github/open-issues/carnal0wnage/weirdAAL)](https://badgen.net/github/open-issues/carnal0wnage/weirdAAL) [![closed-issues](https://badgen.net/github/closed-issues/carnal0wnage/weirdAAL)](https://badgen.net/github/closed-issues/carnal0wnage/weirdAAL) |
 | **Pacu** | [https://github.com/RhinoSecurityLabs/pacu](https://github.com/RhinoSecurityLabs/pacu) | AWS penetration testing toolkit |[![stars](https://badgen.net/github/stars/RhinoSecurityLabs/pacu)](https://badgen.net/github/stars/RhinoSecurityLabs/pacu)| [![contributors](https://badgen.net/github/contributors/RhinoSecurityLabs/pacu)](https://badgen.net/github/contributors/RhinoSecurityLabs/pacu)[![watchers](https://badgen.net/github/watchers/RhinoSecurityLabs/pacu)](https://badgen.net/github/watchers/RhinoSecurityLabs/pacu)[![last-commit](https://badgen.net/github/last-commit/RhinoSecurityLabs/pacu)](https://badgen.net/github/last-commit/RhinoSecurityLabs/pacu) [![open-issues](https://badgen.net/github/open-issues/RhinoSecurityLabs/pacu)](https://badgen.net/github/open-issues/RhinoSecurityLabs/pacu) [![closed-issues](https://badgen.net/github/closed-issues/RhinoSecurityLabs/pacu)](https://badgen.net/github/closed-issues/RhinoSecurityLabs/pacu) |
 | **Cred Scanner** | [https://github.com/disruptops/cred_scanner](https://github.com/disruptops/cred_scanner) | A simple file-based scanner to look for potential AWS access and secret keys in files  |[![stars](https://badgen.net/github/stars/disruptops/cred_scanner)](https://badgen.net/github/stars/disruptops/cred_scanner)| [![contributors](https://badgen.net/github/contributors/disruptops/cred_scanner)](https://badgen.net/github/contributors/disruptops/cred_scanner)[![watchers](https://badgen.net/github/watchers/disruptops/cred_scanner)](https://badgen.net/github/watchers/disruptops/cred_scanner)[![last-commit](https://badgen.net/github/last-commit/disruptops/cred_scanner)](https://badgen.net/github/last-commit/disruptops/cred_scanner) [![open-issues](https://badgen.net/github/open-issues/disruptops/cred_scanner)](https://badgen.net/github/open-issues/disruptops/cred_scanner) [![closed-issues](https://badgen.net/github/closed-issues/disruptops/cred_scanner)](https://badgen.net/github/closed-issues/disruptops/cred_scanner) |
@@ -222,3 +344,5 @@ Do you want to contribute to this list? Feel free to send a PR and make sure you
 * **hoenybuckets** [https://github.com/honey-buckets/](https://github.com/honey-buckets/)
 * **thebuckhacker** [https://github.com/thebuckhacker](https://github.com/thebuckhacker)
 * **buckets.grayhatwarfare** [https://github.com/buckets.grayhatwarfare](https://github.com/buckets.grayhatwarfare)
+
+
