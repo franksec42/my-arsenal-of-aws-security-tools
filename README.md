@@ -1,22 +1,24 @@
 # Cloud-Security-Resources- NEW REPO
 ## Table of Contents
-- [Intro](#Short_List)
--- [Disclaimer](#Disclaimer)
--- [Thanks](#Thanks)
--- [Frameworks](#Reference_Frameworks)
--- [Contribute](#contribute)
--- [Linked Repo](#other_Repos)
-- [ShortList](#Short_List)
--- [Defensive](#defensive-hardening-security-assessment-and-inventory)
+[Intro](#Disclaimer)
+- [Disclaimer](#Disclaimer)
+- [Thanks](#Thanks)
+- [Frameworks](#Reference_Frameworks)
+- [Contribute](#contribute)
+- [Linked Repo](#other_Repos)
+[ShortList](#Short_List)
+- [Defensive](#defensive-hardening-security-assessment-and-inventory)
 - [Detailed List](#DETAILED_LIST)
--- [Defensive](#defensive-hardening-security-assessment-and-inventory)
--- [Offensive](#offensive)
--- [Continuous Security Auditing](#continuous-security-auditing)
--- [Digital Forensics and Incident Response](#digital-forensics-and-incident-response)
--- [Development Security](#development-security)
--- [S3 Buckets Auditing](#s3-buckets-auditing)
--- [Training](#training)
--- [Other interesting tools/code](#other-interesting-tools/code)
+- [Defensive](#defensive-hardening-security-assessment-and-inventory)
+- [Offensive](#offensive)
+- [Continuous Security Auditing](#continuous-security-auditing)
+- [Digital Forensics and Incident Response](#digital-forensics-and-incident-response)
+- [Development Security](#development-security)
+- [S3 Buckets Auditing](#s3-buckets-auditing)
+- [Training](#training)
+- [Other interesting tools/code](#other-interesting-tools/code)
+
+---
 
 ## Disclaimer:
 This is a group of tools references and resources put together for AWS, Azure and GCP.
