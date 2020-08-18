@@ -8,7 +8,14 @@
 - [Frameworks](#Reference_Frameworks)
 - [Contribute](#contribute)
 - [Linked Repo](#other_Repos)
--[ShortList](#Short_List)
+## [ShortList](#Short_List)
+- [S3 Buckets Auditing](#S3)
+- [Training](#Training)
+- [Flaws](#flaws)
+- [Others](#Others)
+- [Honeypots](#Honeypots)
+- [Serverless](#Serverless)
+- [CloudFormation](#CloudFormation)
 
 [Detailed List](#DETAILED_LIST)
 - [Defensive](#defensive-hardening-security-assessment-and-inventory)
@@ -19,6 +26,8 @@
 - [S3 Buckets Auditing](#s3-buckets-auditing)
 - [Training](#training)
 - [Other interesting tools/code](#other-interesting-tools/code)
+
+---
 
 ## Disclaimer:
 This is a group of tools references and resources put together for AWS, Azure and GCP.
@@ -67,6 +76,7 @@ Also a list for documentation
 | Zeus  | Tool-Audit | https://github.com/DenizParlak/Zeus | Hardening | All-AWS |  DenizParlak/Zeus - AWS Auditing & Hardening Tool http://www.denizparlak.com/?p=386   |  
 | Nimbostratus   | Tool-Audit | https://github.com/andresriancho/nimbostratus | Infra | All-AWS |  Fingerprinting and Exploiting Cloud infra imbostratus - Tools for fingerprinting and exploiting Amazon cloud infrastructures + video presentation and intro blog post Instruction Link: https://andresriancho.github.io/nimbostratus/ |  
 | Bucketdump  | Tool-Bucket | https://github.com/jordanpotti/AWSBucketDump | Buckets | All-AWS |  |  
+| SpaceSiren  | Tool-Bucket | https://github.com/spacesiren/spacesiren.git | Token Manamgnet and monitoring | All-AWS | SpaceSiren is a honey token manager and alert system for AWS. With this fully serverless application, you can create and manage honey tokens at scale -- up to 10,000 per SpaceSiren instance -- at close to no cost. |  
  
  
 **S3 Buckets Auditing:**
@@ -346,5 +356,3 @@ Also a list for documentation
 * **hoenybuckets** [https://github.com/honey-buckets/](https://github.com/honey-buckets/)
 * **thebuckhacker** [https://github.com/thebuckhacker](https://github.com/thebuckhacker)
 * **buckets.grayhatwarfare** [https://github.com/buckets.grayhatwarfare](https://github.com/buckets.grayhatwarfare)
-
-
